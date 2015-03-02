@@ -2,10 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
 
     <!--google font include http://www.google.com/fonts#UsePlace:use/Collection:Montserrat -->
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
@@ -15,7 +12,10 @@
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
 
+    <!-- Bootstrap Checkbox https://github.com/flatlogic/awesome-bootstrap-checkbox -->
+    <link href="assets/css/awesome-bootstrap-checkbox.css" rel="stylesheet">
     
+
     <!--CAC styles-->
     <link href="assets/css/styles.css" rel="stylesheet">
 
@@ -23,12 +23,10 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the begining because of a FOUC - -->
-
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
     <!-- Bootstrap core JS -->
     <script src="assets/js/bootstrap.js"></script>
-
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -41,8 +39,6 @@
   <body>
 
 
-    <!--page wrap-->
-    <!--<div id="page-wrap">-->
 
     <header id="header" class="navbar-fixed-top" role="banner">
 
@@ -72,8 +68,6 @@
         </nav>
 
       </div>
-
-
     </header><!--/#header-->
 
 
@@ -82,52 +76,76 @@
 
 
 
+    <div id="account-login" class="main-content container">
+      <div class="row">
+        <div class="col-xs-12">
+          <header>
+            <h1>Account Login</h1>
+            <div class="blue-border"></div>
+          </header>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <div id="login-form-wrapper" class="grey-bg">
+            <form id="login-form">
+              <div class="form-group">
+                <label for="login-name">Login Name</label>
+                <input type="text" class="form-control" id="login-name" placeholder="Login Name">
+              </div>
+              <div class="form-group">
+                <label for="login-password">Password</label>
+                <input type="password" class="form-control" id="login-password" placeholder="Password">
+              </div>
+              <div class="form-inline">
+                <div class="checkbox">
+                  <input id="account-remember-checkbox" type="checkbox">
+                  <label for="account-remember-checkbox">Keep me signed in for 2 weeks unless I sign out.</label>
+                </div>
+                <button type="submit" class="blue-button">Log In <i class="fa fa-angle-right"></i></button>
+              </div>
+            </form>
+          </div>
+
+        </div> 
+        <div id="account-or-wrap" class="hidden-xs hidden-sm col-md-1">
+          <div id="account-or">
+            Or
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-5">
+          <div id="social-signup-wrapper" class="grey-bg">
+            <label>Sign in With</label>
+            <ul id="social-signup">
+              <li id="social-signup-facebook"><span class="fa fa-facebook"></span><a class="blue-button" href="/">
+ Sign in with Facebook <i class="fa fa-angle-right"></i></a></li>
+              <li id="social-signup-twitter" class="last"><span class="fa fa-twitter"></span><a class="blue-button" href="/">
+ Sign in with Twitter <i class="fa fa-angle-right"></i></a></li>
+            </ul>
+          </div>
+        </div>         
+      </div>
+    </div><!--/#account-login-->
 
 
-
-      <div id="account-login" class="container">
+    <footer id="footer" role="contentinfo">
+      <div class="container">
         <div class="row">
           <div class="col-xs-12">
-            <header>
-              <h1>Account Login</h1>
-            </header>
+            <ul>
+              <li id="footer-contact" class="first"><a href="#">Contact</a></li>
+              <li id="footer-privacy"><a href="#">Privacy Policy</a></li>
+              <li id="footer-disclaimer"><a href="#">Disclaimer</a></li>
+              <li id="footer-terms"><a href="#">Terms of Use</a></li>
+            </ul>
+            <h6>&copy;2014 Avalanche Canada, <br />All Rights Reserved</h6>
+            <!-- Front End Development by Chris Bovard - www.chrisbovard.com -->
           </div>
         </div>
+      </div>
+    </footer><!--/#footer-->
 
-        <div class="row">
-          <div class="col-xs-12 col-md-5">
-            LOGIN FORM
-          </div> 
-          <div class="col-md-2">
-            or button here
-          </div>
-          <div class="col-xs-12 col-md-5">
-            Signup social here
-          </div>         
-        </div>
-      </div><!--/#account-login-->
-
-
-
-
-      <footer id="footer" role="contentinfo">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12">
-              <ul>
-                <li id="footer-contact" class="first"><a href="#">Contact</a></li>
-                <li id="footer-privacy"><a href="#">Privacy Policy</a></li>
-                <li id="footer-disclaimer"><a href="#">Disclaimer</a></li>
-                <li id="footer-terms"><a href="#">Terms of Use</a></li>
-              </ul>
-              <h6>&copy;2014 Avalanche Canada, <br />All Rights Reserved</h6>
-              <!-- Front End Development by Chris Bovard - www.chrisbovard.com -->
-            </div>
-          </div>
-        </div>
-      </footer><!--/#footer-->
-
-    <!--</div>--><!--/#page-wrap-->
 
   </body>
 </html>

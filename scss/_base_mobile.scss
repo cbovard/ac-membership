@@ -15,7 +15,7 @@
 ----------------------------------------------------------------------------------*/
 
 //buttons
-.black-button {
+/*.black-button {
 	font-family:$font-family-google;
 	background-color:#121212;
 	color:#fff;
@@ -39,7 +39,7 @@
 		@include font-size(2.0, 2.0);
 		font-weight:bold;
 	}
-}
+}*/
 .blue-button {
 	font-family:$font-family-google;
 	background-color:#0056b7;
@@ -47,6 +47,7 @@
 	@include font-size(1.6, 1.6);
 	font-weight:bold;
 	text-transform:uppercase;
+	border:none;
 	&:visited,
 	&:hover,
 	&:active,
@@ -63,17 +64,18 @@
 	.fa-angle-right {
 		@include font-size(2.0, 2.0);
 		font-weight:bold;
+		padding-left:8px;
 	}
 }
 
-.blue-border {
+/*.blue-border {
 	height:8px;
 	width:50px;
 	background-color:#0056b7;
 	position:absolute;
 	bottom:0;
 	left:0;
-}
+}*/
 
 
 .div {border:1px solid red;}
@@ -81,6 +83,13 @@
 	width:100%;
 	height:8px;
 	background:transparent url(../img/ribbon-greydark-bg.png) repeat-x center center;
+}
+
+.grey-bg {
+	background-color:#eeeff1;
+	padding:20px;
+	min-height:1px;
+	@include clearfix();
 }
 //end of custom classes
 
@@ -96,6 +105,7 @@ body {padding-top:75px;}
 	width:100%;
 	height:75px;
 	border-bottom:1px solid #ececec;
+	background:#fff;
 	h1 {
 		margin:14px 0 0 0;
 		padding:0;
@@ -125,7 +135,6 @@ body {padding-top:75px;}
   .navbar-header {
   	float: left;
   }
-  
   .navbar-nav {
   	float:right;
   	margin:0;
@@ -166,16 +175,152 @@ body {padding-top:75px;}
 			}
   	}
   }
+}
+/*navigation ends*/
+
+
+
+/*main content global classes*/
+.main-content {
+	min-height:100px;
+	@include clearfix();
+	padding-bottom:120px; //desktop bottom
+	z-index:$zindex-navbar;
+	position:relative;
+	header {
+		@include clearfix();	
+		background:transparent url(../img/ribbon-bg.png) center bottom repeat-x;
+		position:relative;
+		padding:10px 0 32px 0;
+		margin:80px 0 50px 0; //desktop
+		h1 {
+			//@include font-size(3.6, 3.8);
+			@include font-size(5.2, 5.0);
+			font-family:$font-family-google;
+			font-weight:bold;
+			margin:0 0 0 0;
+		}
+	}
 
 }
+/*main content global classes ends*/
 
-/*navigation ends*/
+/*form globals*/
+.form-group {
+	margin-bottom:22px;
+}
+label {
+	@include font-size(1.6, 2.8);
+	font-family:$font-family-google;	
+	color:#2f63c9;
+	text-transform:uppercase;
+}
+.checkbox label {
+	color:#5b5b5b;
+	font-family:$font-family-sans-serif;
+	text-transform:capitalize;
+	@include font-size(1.5, 2.2);
+}
+
+.form-control {
+	border:none;
+	border-top:2px solid #d9d9d9;
+	height:64px;
+	@include font-size(2.4, 2.8);
+	color:#d9d9d9;
+}
+
+
+
+/*form globals ends*/
+
 
 
 /*account-login*/
 #account-login {
-	min-height:100px;
-	@include clearfix();
+	#login-form {
+		.checkbox {
+			width:60%;
+			padding-right:14px;
+		}
+		button {
+			width:40%;
+			float:right;
+			//maybe move to global
+			padding:22px 22px 20px 26px;
+		}
+	}
+  #account-or-wrap {
+  	min-height:344px;
+  	position:relative;
+  }
+	#account-or {
+		background-color:#000;
+		@include font-size(1.6, 2.6);
+		padding:16px 0 0 15px;
+		color:#fff;
+		font-family:$font-family-google;	
+		text-transform:uppercase;
+		position:absolute;
+		left:18%;
+		top:44%;
+		width:58px;
+		height:58px;
+		border-radius:50%;
+	}
+
+	#social-signup-wrapper {
+		min-height:344px;
+
+		#social-signup {
+			list-style:none;
+			padding-left:38px;
+			margin:22px 0 0 0;
+			li {
+				display:block;
+				height:60px;
+				margin-bottom:20px;
+				&.last {margin:0;}
+			}
+			#social-signup-facebook {
+				background-color:#366ad0;
+				a {
+					background-color:#366ad0;
+				}
+			}
+			#social-signup-twitter {
+				background-color:#00d8ff;
+				a {
+					background-color:#00d8ff;
+				}
+			}
+			a {
+				display:inline-block;
+				padding-left:20px;
+				width:82.521489971347%;
+				@include font-size(1.6, 2.6);
+			}
+			.fa-facebook,
+			.fa-twitter {
+				@include font-size(3.3, 2.6);
+				color:#fff;
+				height:60px;
+				width:17.478510028653%;
+				//display:inline-block;
+				padding:16px 0 0 0;
+				text-align:center;
+			}
+
+			.fa-facebook {
+				background-color:#366ad0;
+				border-right:#2b5ac6 3px solid;
+			}
+			.fa-twitter {
+				background-color:#00d8ff;
+				border-right:#00b7ff 3px solid;
+			}
+		}
+	}
 }
 /*account-login ends*/
 
@@ -185,10 +330,12 @@ body {padding-top:75px;}
 
 /*footer*/
 #footer {
-	height:214px;
+	min-height:76px;
 	border-top:1px solid #e2e2e2;
-	padding-top:20px;
+	border-bottom:1px solid #e2e2e2;
+	padding:20px 0;
 	width:100%;
+	margin-bottom:100px;
 	ul {
 		list-style:none;
 		padding:0;
