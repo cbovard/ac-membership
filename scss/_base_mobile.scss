@@ -1,0 +1,236 @@
+/* CAC Custom styles
+ * Author: Chris Bovard - www.chrisbovard.com
+ * Oct. 27, 2014
+*/
+
+/* =Import Files for Mixin Usage - ETC
+----------------------------------------------------------------------------------*/
+//the variable file is the one that will be modified by the themer - chris bovard
+@import "custom_cac_variables"; 
+//bootstrap mixins
+@import "bootstrap/mixins";
+
+
+/* =Base Mobile Layout and Styles
+----------------------------------------------------------------------------------*/
+
+//buttons
+.black-button {
+	font-family:$font-family-google;
+	background-color:#121212;
+	color:#fff;
+	@include font-size(1.6, 1.6);
+	font-weight:bold;
+	text-transform:uppercase;
+	&:visited,
+	&:hover,
+	&:active,
+	&:focus {
+		text-decoration:none;
+		color:#fff;
+	} 
+	&:hover {
+		background-color:#474747;
+	}
+	&:focus {
+		background-color:#737373;
+	}
+	.fa-angle-right {
+		@include font-size(2.0, 2.0);
+		font-weight:bold;
+	}
+}
+.blue-button {
+	font-family:$font-family-google;
+	background-color:#0056b7;
+	color:#fff;
+	@include font-size(1.6, 1.6);
+	font-weight:bold;
+	text-transform:uppercase;
+	&:visited,
+	&:hover,
+	&:active,
+	&:focus {
+		text-decoration:none;
+		color:#fff;
+	} 
+	&:hover {
+		background-color:#1e7be5;
+	}
+	&:focus {
+		background-color:#4299fc;
+	}
+	.fa-angle-right {
+		@include font-size(2.0, 2.0);
+		font-weight:bold;
+	}
+}
+
+.blue-border {
+	height:8px;
+	width:50px;
+	background-color:#0056b7;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+
+
+.div {border:1px solid red;}
+.dark-ribbon {
+	width:100%;
+	height:8px;
+	background:transparent url(../img/ribbon-greydark-bg.png) repeat-x center center;
+}
+//end of custom classes
+
+
+
+
+
+/*http://getbootstrap.com/components/#navbar-fixed-top*/
+body {padding-top:75px;}
+
+/*header*/
+#header {
+	width:100%;
+	height:75px;
+	border-bottom:1px solid #ececec;
+	h1 {
+		margin:14px 0 0 0;
+		padding:0;
+		text-decoration:none;
+		@include hide-text();
+		background:transparent url(../img/logo.png) no-repeat center center;
+	}
+	h1,
+	h1 a {
+		width:171px;
+		height:47px;
+		display:block;
+	}
+}
+/*header ends*/
+
+/*navigation*/
+#navigation {
+	background-color:transparent;
+  border:none;
+  margin:0;
+  .navbar-header {
+  	height:75px;
+  	@include clearfix();
+
+  }
+  .navbar-header {
+  	float: left;
+  }
+  
+  .navbar-nav {
+  	float:right;
+  	margin:0;
+  	li {
+  		float:left;
+			a {
+				@include font-size(1.3, 2.1);
+				padding:24px 22px 30px 20px;
+				color:#121212;
+				&:visited,
+				&:hover,
+				&:active,
+				&:focus {
+					text-decoration:none;
+					color:#121212;
+				}
+				&:hover {color:#0056b7;}
+			}
+			.nav-red-bg {
+				background-color:#d82631;
+				color:#fff;
+				//@include font-size(1.5, 2.4);
+				font-weight:bold;
+				//height:75px;
+				//padding:24px 22px 30px 20px;
+				&:visited,
+				&:hover,
+				&:active,
+				&:focus {
+					text-decoration:none;
+					color:#fff;
+					background-color:#d82631;
+				}
+				&:hover {
+					color:#fff;
+					background-color:#b2212a;
+				}
+			}
+  	}
+  }
+
+}
+
+/*navigation ends*/
+
+
+/*account-login*/
+#account-login {
+	min-height:100px;
+	@include clearfix();
+}
+/*account-login ends*/
+
+
+
+
+
+/*footer*/
+#footer {
+	height:214px;
+	border-top:1px solid #e2e2e2;
+	padding-top:20px;
+	width:100%;
+	ul {
+		list-style:none;
+		padding:0;
+		margin:0;
+		background:transparent url(../img/footer-menu-mobile-bg.png) 33% top no-repeat;
+		display:block;
+		min-height:1px;
+		@include clearfix();
+		li {
+			list-style:none;
+			display:block;
+			width:40%;
+			float:left;
+			margin-bottom:30px;
+			a {
+			  @include font-size(1.5, 1.8);
+			  color:#121212;
+				&:visited,
+				&:hover,
+				&:active,
+				&:focus {
+					text-decoration:none;
+				} 
+				&:hover {
+					color:#0056B7;
+				}
+			}
+		}
+	}
+	h6 {
+		margin:0;
+		padding:0;
+		clear:both;
+		color:#b7b7b7;
+		@include font-size(1.5, 2.2);
+		font-weight:normal;
+	}
+}
+/*footer ends*/
+
+
+
+
+
+

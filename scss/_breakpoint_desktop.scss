@@ -1,0 +1,34 @@
+/* CAC Custom styles
+ * Author: Chris Bovard - www.chrisbovard.com
+ * Oct. 12, 2014
+*/
+
+/* =Import Files for Mixin Usage
+----------------------------------------------------------------------------------*/
+//the variable file is the one that will be modified by the themer - chris bovard
+@import "custom_cac_variables"; 
+//boostrap mixins
+@import "bootstrap/mixins";
+
+/* =Desktop Layout and Styles
+----------------------------------------------------------------------------------*/
+
+
+
+
+
+
+/*footer*/
+#footer {
+  ul {
+      float:left;
+      clear:none;
+  }
+  h6 {
+		float:right;	
+		clear:none;
+    margin-top:4px;
+    br {display:none;}
+  }
+}
+/*footer ends*/

@@ -1,0 +1,308 @@
+/* CAC Membership Custom styles
+ * Author: Chris Bovard - www.chrisbovard.com
+ * Feb. 22, 2015
+*/
+/* =Import Files for Mixin Usage
+----------------------------------------------------------------------------------*/
+/* =Styles for 320 to Desktop
+----------------------------------------------------------------------------------*/
+/* CAC Custom styles
+ * Author: Chris Bovard - www.chrisbovard.com
+ * Oct. 27, 2014
+*/
+/* =Import Files for Mixin Usage - ETC
+----------------------------------------------------------------------------------*/
+/* =Base Mobile Layout and Styles
+----------------------------------------------------------------------------------*/
+.black-button {
+  font-family: "Montserrat", Arial, sans-serif;
+  background-color: #121212;
+  color: #fff;
+  font-size: 16px;
+  line-height: 16px;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.black-button:visited, .black-button:hover, .black-button:active, .black-button:focus {
+  text-decoration: none;
+  color: #fff;
+}
+.black-button:hover {
+  background-color: #474747;
+}
+.black-button:focus {
+  background-color: #737373;
+}
+.black-button .fa-angle-right {
+  font-size: 20px;
+  line-height: 20px;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: bold;
+}
+
+.blue-button {
+  font-family: "Montserrat", Arial, sans-serif;
+  background-color: #0056b7;
+  color: #fff;
+  font-size: 16px;
+  line-height: 16px;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.blue-button:visited, .blue-button:hover, .blue-button:active, .blue-button:focus {
+  text-decoration: none;
+  color: #fff;
+}
+.blue-button:hover {
+  background-color: #1e7be5;
+}
+.blue-button:focus {
+  background-color: #4299fc;
+}
+.blue-button .fa-angle-right {
+  font-size: 20px;
+  line-height: 20px;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: bold;
+}
+
+.blue-border {
+  height: 8px;
+  width: 50px;
+  background-color: #0056b7;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.div {
+  border: 1px solid red;
+}
+
+.dark-ribbon {
+  width: 100%;
+  height: 8px;
+  background: transparent url(../img/ribbon-greydark-bg.png) repeat-x center center;
+}
+
+/*http://getbootstrap.com/components/#navbar-fixed-top*/
+body {
+  padding-top: 75px;
+}
+
+/*header*/
+#header {
+  width: 100%;
+  height: 75px;
+  border-bottom: 1px solid #ececec;
+}
+#header h1 {
+  margin: 14px 0 0 0;
+  padding: 0;
+  text-decoration: none;
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+  background: transparent url(../img/logo.png) no-repeat center center;
+}
+#header h1,
+#header h1 a {
+  width: 171px;
+  height: 47px;
+  display: block;
+}
+
+/*header ends*/
+/*navigation*/
+#navigation {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+}
+#navigation .navbar-header {
+  height: 75px;
+}
+#navigation .navbar-header:before, #navigation .navbar-header:after {
+  content: " ";
+  display: table;
+}
+#navigation .navbar-header:after {
+  clear: both;
+}
+#navigation .navbar-header {
+  float: left;
+}
+#navigation .navbar-nav {
+  float: right;
+  margin: 0;
+}
+#navigation .navbar-nav li {
+  float: left;
+}
+#navigation .navbar-nav li a {
+  font-size: 13px;
+  line-height: 21px;
+  font-size: 1.3rem;
+  line-height: 2.1rem;
+  padding: 24px 22px 30px 20px;
+  color: #121212;
+}
+#navigation .navbar-nav li a:visited, #navigation .navbar-nav li a:hover, #navigation .navbar-nav li a:active, #navigation .navbar-nav li a:focus {
+  text-decoration: none;
+  color: #121212;
+}
+#navigation .navbar-nav li a:hover {
+  color: #0056b7;
+}
+#navigation .navbar-nav li .nav-red-bg {
+  background-color: #d82631;
+  color: #fff;
+  font-weight: bold;
+}
+#navigation .navbar-nav li .nav-red-bg:visited, #navigation .navbar-nav li .nav-red-bg:hover, #navigation .navbar-nav li .nav-red-bg:active, #navigation .navbar-nav li .nav-red-bg:focus {
+  text-decoration: none;
+  color: #fff;
+  background-color: #d82631;
+}
+#navigation .navbar-nav li .nav-red-bg:hover {
+  color: #fff;
+  background-color: #b2212a;
+}
+
+/*navigation ends*/
+/*account-login*/
+#account-login {
+  min-height: 100px;
+}
+#account-login:before, #account-login:after {
+  content: " ";
+  display: table;
+}
+#account-login:after {
+  clear: both;
+}
+
+/*account-login ends*/
+/*footer*/
+#footer {
+  height: 214px;
+  border-top: 1px solid #e2e2e2;
+  padding-top: 20px;
+  width: 100%;
+}
+#footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: transparent url(../img/footer-menu-mobile-bg.png) 33% top no-repeat;
+  display: block;
+  min-height: 1px;
+}
+#footer ul:before, #footer ul:after {
+  content: " ";
+  display: table;
+}
+#footer ul:after {
+  clear: both;
+}
+#footer ul li {
+  list-style: none;
+  display: block;
+  width: 40%;
+  float: left;
+  margin-bottom: 30px;
+}
+#footer ul li a {
+  font-size: 15px;
+  line-height: 18px;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  color: #121212;
+}
+#footer ul li a:visited, #footer ul li a:hover, #footer ul li a:active, #footer ul li a:focus {
+  text-decoration: none;
+}
+#footer ul li a:hover {
+  color: #0056B7;
+}
+#footer h6 {
+  margin: 0;
+  padding: 0;
+  clear: both;
+  color: #b7b7b7;
+  font-size: 15px;
+  line-height: 22px;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  font-weight: normal;
+}
+
+/*footer ends*/
+@media screen and (min-width: 600px) {
+  /* CAC Custom styles
+   * Author: Chris Bovard - www.chrisbovard.com
+   * Feb. 23, 2015
+  */
+  /* =Import Files for Mixin Usage
+  ----------------------------------------------------------------------------------*/
+  /* =Tablet Layout and Styles
+  ----------------------------------------------------------------------------------*/
+  /*footer*/
+  #footer ul {
+    background: none;
+    display: inline;
+  }
+  #footer ul li {
+    list-style: none;
+    display: inline;
+    float: left;
+    margin: 0;
+    width: auto;
+    padding: 3px 26px 3px 0;
+    margin: 0 26px 0 0;
+  }
+  #footer ul #footer-contact {
+    border-right: 3px solid #eeeff1;
+  }
+  #footer h6 {
+    margin-top: 30px;
+  }
+  #footer h6 br {
+    display: none;
+  }
+
+  /*footer ends*/
+}
+@media screen and (min-width: 1025px) {
+  /* CAC Custom styles
+   * Author: Chris Bovard - www.chrisbovard.com
+   * Oct. 12, 2014
+  */
+  /* =Import Files for Mixin Usage
+  ----------------------------------------------------------------------------------*/
+  /* =Desktop Layout and Styles
+  ----------------------------------------------------------------------------------*/
+  /*footer*/
+  #footer ul {
+    float: left;
+    clear: none;
+  }
+  #footer h6 {
+    float: right;
+    clear: none;
+    margin-top: 4px;
+  }
+  #footer h6 br {
+    display: none;
+  }
+
+  /*footer ends*/
+}

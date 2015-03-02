@@ -1,0 +1,33 @@
+/* CAC Custom styles
+ * Author: Chris Bovard - www.chrisbovard.com
+ * Feb. 23, 2015
+*/
+/* =Import Files for Mixin Usage
+----------------------------------------------------------------------------------*/
+/* =Tablet Layout and Styles
+----------------------------------------------------------------------------------*/
+/*footer*/
+#footer ul {
+  background: none;
+  display: inline;
+}
+#footer ul li {
+  list-style: none;
+  display: inline;
+  float: left;
+  margin: 0;
+  width: auto;
+  padding: 3px 26px 3px 0;
+  margin: 0 26px 0 0;
+}
+#footer ul #footer-contact {
+  border-right: 3px solid #eeeff1;
+}
+#footer h6 {
+  margin-top: 30px;
+}
+#footer h6 br {
+  display: none;
+}
+
+/*footer ends*/

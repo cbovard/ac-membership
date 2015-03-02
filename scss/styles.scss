@@ -1,0 +1,28 @@
+/* CAC Membership Custom styles
+ * Author: Chris Bovard - www.chrisbovard.com
+ * Feb. 22, 2015
+*/
+
+/* =Import Files for Mixin Usage
+----------------------------------------------------------------------------------*/
+//the variable file is the one that will be modified by the themer - chris bovard
+@import "custom_cac_variables"; 
+//boostrap mixins
+@import "bootstrap/mixins";
+
+
+/* =Styles for 320 to Desktop
+----------------------------------------------------------------------------------*/
+
+//320 mobile styles and up
+@import "_base_mobile.scss";
+
+//Tablet Styles 
+@media screen and (min-width: $screen-tablet) {
+  @import "_breakpoint_tablet.scss";
+}
+
+//Desktop Styles
+@media screen and (min-width: $screen-desktop) {
+  @import "_breakpoint_desktop.scss";
+}
